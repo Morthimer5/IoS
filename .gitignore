@@ -53,3 +53,7 @@ fabric.properties
 ### Maven ###
 target/
 .mvn/timing.properties
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
