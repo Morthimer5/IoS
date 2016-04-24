@@ -49,3 +49,7 @@ fabric.properties
 
 ### Intellij Patch ###
 *.iml
+
+### Maven ###
+target/
+.mvn/timing.properties
