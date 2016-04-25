@@ -11,9 +11,12 @@ import org.springframework.stereotype.Component;
 @Component("All")
 public class TransformAll implements Transformer{
 
-    @Autowired
-    @Qualifier("three-simbols")
     private Generator generator;
+
+    @Autowired
+    public TransformAll(@Qualifier("three-simbols") Generator generator) {
+        this.generator = generator;
+    }
 
     public String transform() {
         return generator.generate().toUpperCase();

@@ -11,10 +11,12 @@ import org.springframework.stereotype.Component;
 @Component("First")
 public class TransformerFirst implements Transformer{
 
-    @Autowired
-    @Qualifier("eight-simbols")
     private Generator generator;
 
+    @Autowired
+    public TransformerFirst(@Qualifier("eight-simbols")Generator generator) {
+        this.generator = generator;
+    }
 
     public String transform() {
         char[] array = generator.generate().toCharArray();

@@ -23,8 +23,9 @@ public class Main {
 
         while (true){
             System.out.println("Please choose system:");
-            System.out.println("1 - for VISA");
+            System.out.println("1 - for VISA()");
             System.out.println("2 - for MasterCard");
+            System.out.println("else - for exit");
             input = reader.readLine();
             if(input.equals("1")){
                 t = (Transformer) context.getBean("First");
