@@ -15,6 +15,7 @@ public class TransformerFirst implements Transformer{
     @Qualifier("eight-simbols")
     private Generator generator;
 
+
     public String transform() {
         char[] array = generator.generate().toCharArray();
         array[0] = Character.toUpperCase(array[0]);
